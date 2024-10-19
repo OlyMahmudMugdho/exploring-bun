@@ -5,7 +5,9 @@
   "scripts": {
     "start" : "bun run index.ts",
     "dev" : "bun run --watch index.ts",
-    "build" : "bun build --target=bun index.ts --outdir ./build"
+    "build" : "bun build --target=bun index.ts --outdir ./build",
+    "compile" : "bun build . --compile --outfile hello-api",
+    "compile:windows" : "bun build . --compile --target=bun-windows-x64 --outfile hello-api"
   },
   "devDependencies": {
     "@types/bun": "latest"
